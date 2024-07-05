@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background-image: url(./Wallpaper.png);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* 會固定住沒辦法滾動 */
+}
+
+#bigTitle {
+    padding-right: 15px;
+}
+
+#bigTitle:hover {
+    color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#topBtn {
+    height: 1.5vh;
+    width: 25vh;
+    border-radius: 30%;
+    position: fixed;
+    margin-left: 45vw;
+    top: 3vh;
+    z-index: 1000;
+    opacity: .5;
+    /* transition: opacity 0.3s ease; 添加過渡效果 */
+}
+
+#topBtn:hover {
+    height: 1.5vh;
+    width: 25vh;
+    border-radius: 30%;
+    position: fixed;
+    margin-left: 45vw;
+    top: 2vh;
+    z-index: 1000;
+    cursor: pointer;
+    /* opacity: .5; */
+    /* transition: opacity 0.3s ease; 添加過渡效果 */
+}
+
+section {
+    background-image: url(/小專1/半透明Wallpaper.png);
+    height: 100vh;
+}
+
+/* body:hover {
+    background: url(/圓形漸層灰.jpg);
+    background-repeat: no-repeat;
+} */
+.background-text {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 100px;
+    font-family: fantasy;
+    font-weight: bolder;
+    text-align: center;
+    /* pointer-events: auto; */
+    white-space: nowrap;
+}
+
+.background-text:hover {
+    color: white;
+}
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    opacity: .5;
+}
+
+.circle:hover {
+    opacity: 1;
+}
+
+.circleLeft {
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 105vh;
+    height: 105vh;
+    right: 70%;
+}
+
+#Not:hover {
+    content:  url("./加密貨幣大圖/notcoin-not-whitelogo.svg");
+}
+
+.circleRight {
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    width: 105vh;
+    height: 105vh;
+    left: 70%;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contentRight {
+    position: relative;
+    top: 5%;
+    left: 32%;
+    width: 65%;
+    height: 85%;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+.contentRight>h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    margin: 10px;
+}
+
+.contentRight>p,
+ul {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 40px;
+    margin: 10px;
+}
+
+.contentLeft {
+    position: relative;
+    top: 5%;
+    left: 2%;
+    width: 65%;
+    height: 85%;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+.contentLeft>h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    margin: 10px;
+}
+
+.contentLeft>p,
+ul {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 40px;
+    margin: 10px;
+}
+
+#button {
+    font-size: 3vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    height: 6vh;
+    width: 25vh;
+    margin-left: 2vh;
+    cursor: pointer;
+}
+
+/* .contentRight>ul {
+    display: flex;
+    justify-content: left;
+    font-size: 40px;
+    margin: 10px;
+} */
+
+.circle1 {
+    width: 25vh;
+    height: 25vh;
+    animation: float1 20s infinite;
+}
+
+@keyframes float1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(200px, 150px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle2 {
+    width: 18vh;
+    height: 18vh;
+    animation: float2 18s infinite;
+}
+
+@keyframes float2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-180px, 140px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle3 {
+    width: 16vh;
+    height: 16vh;
+    animation: float3 22s infinite;
+}
+
+@keyframes float3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(160px, -130px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle4 {
+    width: 180px;
+    height: 180px;
+    animation: float4 24s infinite;
+}
+
+@keyframes float4 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-200px, 120px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle5 {
+    width: 130px;
+    height: 130px;
+    animation: float5 20s infinite;
+}
+
+@keyframes float5 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(180px, -100px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle6 {
+    width: 150px;
+    height: 150px;
+    animation: float6 25s infinite;
+}
+
+@keyframes float6 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-160px, 180px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle7 {
+    width: 140px;
+    height: 140px;
+    animation: float7 19s infinite;
+}
+
+@keyframes float7 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(190px, -170px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle8 {
+    width: 160px;
+    height: 160px;
+    animation: float8 21s infinite;
+}
+
+@keyframes float8 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(150px, -160px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle9 {
+    width: 160px;
+    height: 160px;
+    animation: float9 23s infinite;
+}
+
+@keyframes float9 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(170px, -20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle10 {
+    width: 170px;
+    height: 170px;
+    animation: float10 26s infinite;
+}
+
+@keyframes float10 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-140px, -200px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle11 {
+    width: 200px;
+    height: 200px;
+    animation: float11 24s infinite;
+}
+
+@keyframes float11 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(100px, -220px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle12 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(252, 250, 248);
+    animation: float12 27s infinite;
+}
+
+@keyframes float12 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-170px, 140px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

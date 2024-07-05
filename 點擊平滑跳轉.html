@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Example</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #target-section {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#target-section">跳到指定位置</a>
+
+    <div class="section" style="background-color: lightgray;">
+        <h2>第一部分</h2>
+        <p>這是頁面的第一部分。</p>
+    </div>
+
+    <div class="section" style="background-color: lightcyan;">
+        <h2>指定位置</h2>
+        <p>這是目標位置。</p>
+    </div>
+
+    <div id="target-section" class="section" style="background-color: lightcoral;">
+        <h2>第三部分</h2>
+        <p>這是頁面的第三部分。</p>
+    </div>
+
+</body>
+</html>
