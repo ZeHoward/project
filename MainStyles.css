@@ -4,8 +4,7 @@ body {
     background-image: url(./Wallpaper.png);
     height: 100vh;
     position: relative;
-    overflow: hidden;
-    /* 會固定住沒辦法滾動 */
+    overflow: hidden; /* 會固定住沒辦法滾動 */
 }
 
 #bigTitle {

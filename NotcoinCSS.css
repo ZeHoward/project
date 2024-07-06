@@ -1,11 +1,13 @@
 body {
     background-color: black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 #circleNot {
@@ -35,10 +37,29 @@ body {
     bottom: 10vh;
     right: 10vw;
     color: white;
-    font-size: 200px;
+    font-size: 100px;
+    font-family: fantasy;
     transform: scale(1);
     margin: 0;
     padding: 0;
+}
+
+.count-display {
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-family: fantasy;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 #upGrade {
@@ -47,6 +68,29 @@ body {
     bottom: 10vh;
     left: 10vw;
     height: 10vh;
-    width: 10vw;
+    width: 15vw;
     font-size: 5vh;
+    font-family: fantasy;
+}
+
+#autoIncrement {
+    position: fixed;
+    border-radius: 20px;
+    bottom: 23vh;
+    left: 10vw;
+    height: 10vh;
+    width: 15vw;
+    font-size: 5vh;
+    font-family: fantasy;
+}
+
+#changeBackgroundColor {
+    position: fixed;
+    border-radius: 20px;
+    top: 5vh;
+    left: 5vw;
+    height: 10vh;
+    width: 5vw;
+    font-size: 5vh;
+    font-family: fantasy;
 }
