@@ -62,26 +62,27 @@ body {
     }
 }
 
-#upGrade {
-    position: fixed;
+#upGrade, #autoIncrement {
     border-radius: 20px;
-    bottom: 10vh;
-    left: 10vw;
-    height: 10vh;
-    width: 15vw;
+    background-color: darkgrey;
     font-size: 5vh;
     font-family: fantasy;
 }
 
+#upGrade {
+    position: fixed;
+    bottom: 10vh;
+    left: 10vw;
+    height: 10vh;
+    width: 15vw;
+}
+
 #autoIncrement {
     position: fixed;
-    border-radius: 20px;
     bottom: 23vh;
     left: 10vw;
     height: 10vh;
     width: 15vw;
-    font-size: 5vh;
-    font-family: fantasy;
 }
 
 #changeBackgroundColor {
@@ -89,8 +90,8 @@ body {
     border-radius: 20px;
     top: 5vh;
     left: 5vw;
-    height: 10vh;
-    width: 5vw;
+    height: 8vh;
+    width: 4vw;
     font-size: 5vh;
     font-family: fantasy;
 }
