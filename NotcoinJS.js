@@ -39,7 +39,7 @@ function upGrade() {
         document.getElementById("clickDown").innerText = `${count}`;
         upGradeButton.innerText = `升級${10 * x}元`;
     } else {
-        alert("沒錢升級個毛線");
+        alert("沒錢怎麼升級呢");
     }
     updateButtonColors();
 }
