@@ -1,0 +1,14 @@
+body {
+    background-image: url(./半透明Wallpaper.png);
+}
+
+.highlight {
+    background-color: rgb(235, 231, 9);
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: rgba(199, 217, 240, 0.747);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
