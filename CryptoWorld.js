@@ -23,3 +23,18 @@ function searchAndScroll(event) {
         }
     });
 }
+
+$(() => {
+
+    $("#browser").on("click", (event) => {
+        $.ajax({
+            url: 'https://raw.githubusercontent.com/kirkchu/mongodb/main/demo.json',
+            success: (result) => {
+                console.log(result)
+                const jsonObj = JSON.parse(result)
+                console.log(jsonObj)
+            }
+        })
+    });
+
+})
